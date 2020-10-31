@@ -1,0 +1,19 @@
+Lnome = []
+Lquant = []
+soma = 0
+Lpesos = []
+
+quantidade = int(input('Quantidade de ações: '))
+for c in range(1,quantidade + 1):
+    nome = input('Código da ação: ')
+    carteira = int(input('Quantidade: '))
+    Lnome.append(nome)
+    Lquant.append(carteira)
+    soma+=carteira
+for x in Lquant:
+    Lpesos.append(x/soma)    
+
+print(Lnome)
+print(Lquant)
+print(soma)
+print(Lpesos)
