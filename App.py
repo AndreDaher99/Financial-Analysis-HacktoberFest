@@ -19,7 +19,6 @@ def get():
     end_date = request.args.get('end_date', default=today_date())
     
     stock_info = StockService.get_all_info(symbol, start_date, end_date)
-    print(stock_info)
     return stock_info
 
 if __name__ == '__main__':
